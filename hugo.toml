@@ -1,12 +1,12 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-US'
-title = 'My New Hugo Site'
+title = 'Plume'
 
 disableKinds = ['taxonomy', 'term']
 
 [params]
-  shortName = 'My New Hugo Site'
-  description = 'A new Hugo site'
+  shortName = 'Plume'
+  description = 'The Plume Hugo documentation theme'
   backgroundColor = '#ffffff'
   themeColor = '#000000'
 
