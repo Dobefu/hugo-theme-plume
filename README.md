@@ -65,6 +65,45 @@ Add to your `hugo.toml`:
 theme = "plume"
 ```
 
+## Configuration
+
+To configure the theme, update the `hugo.toml` file with the following:
+
+```toml
+[module]
+  [[module.imports]]
+    path = "github.com/Dobefu/hugo-theme-plume"
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+  [markup.highlight]
+    lineNos = true
+    noClasses = false
+
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      strikethrough = false
+
+      [markup.goldmark.extensions.extras]
+        delete.enable = true
+        mark.enable = true
+        insert.enable = true
+        subscript.enable = true
+        superscript.enable = true
+
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]']]
+          inline = [['\(', '\)']]
+
+```
+
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
