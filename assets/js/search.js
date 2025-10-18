@@ -9,6 +9,30 @@
     return;
   }
 
+  document.addEventListener("keydown", (e) => {
+    if (
+      e.target instanceof HTMLInputElement ||
+      e.target instanceof HTMLTextAreaElement ||
+      e.target instanceof HTMLButtonElement ||
+      e.target instanceof HTMLSelectElement
+    ) {
+      return;
+    }
+
+    if (e.key === "/" && !e.ctrlKey && !e.metaKey) {
+      e.preventDefault();
+
+      /** @type {HTMLInputElement | null} */
+      const searchInput = searchSections[0].querySelector(
+        'input[type="text"], input[type="search"]',
+      );
+
+      if (searchInput) {
+        searchInput.focus();
+      }
+    }
+  });
+
   for (const searchSection of searchSections) {
     /** @type {HTMLInputElement | null} */
     const searchInput = searchSection.querySelector(
