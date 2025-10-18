@@ -22,13 +22,15 @@
         "@id": "{{ site.BaseURL }}#website"
       }
     },
-    {{- if .page.Parent -}}
+    {{- if or .page.Parent (not .page.IsHome) -}}
     {
       "@type": "BreadcrumbList",
       "@id": "{{ .page.Permalink }}#breadcrumb",
       "itemListElement": [
         {{- $pages := slice -}}
         {{- $current := .page -}}
+        {{- $home := site.Home -}}
+        {{- $pages = $pages | append $home -}}
         {{- range $i, $e := .page.Ancestors.Reverse -}}
           {{- $pages = $pages | append $e -}}
         {{- end -}}
