@@ -1,5 +1,6 @@
 [header]
   toggle-sidebar = "Toggle sidebar"
+  toggle-menu = "Toggle menu"
 
 [sidebar]
   close = "Close sidebar"
@@ -7,6 +8,10 @@
 [toc]
   title = "On this page"
   toggle = "Toggle table of contents"
+
+[notFound]
+  title = "Not Found"
+  body = "The page could not be found."
 
 [socialLinks]
   bluesky = "Bluesky"
