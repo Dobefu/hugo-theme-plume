@@ -28,7 +28,6 @@
   display: flex;
   grid-area: sidebar;
   flex-direction: column;
-  gap: var(--spacing-md);
   min-height: 0;
   z-index: 1;
 }
