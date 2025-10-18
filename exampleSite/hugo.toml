@@ -34,7 +34,7 @@ disableKinds = ['taxonomy', 'term']
     weight = 10
 
 [outputs]
-  home = ['html', 'rss', 'webappmanifest']
+  home = ['html', 'rss', 'webappmanifest', 'json']
 
 [markup]
   [markup.tableOfContents]
