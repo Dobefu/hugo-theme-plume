@@ -10,19 +10,17 @@
       ></button>
 
       <nav class="sidebar__nav">
-        {{- if .IsHome -}}
-          <ul class="sidebar__section--pages">
+        <ul class="sidebar__section--pages">
+          {{- if .IsHome -}}
             {{- range site.Menus.main -}}
               <li>
                 <a class="sidebar__section--header" href="{{ .URL }}">{{ .Name }}</a>
               </li>
             {{- end -}}
-          </ul>
-        {{- else if $root -}}
-          <ul class="sidebar__section--pages">
+          {{- else if $root -}}
             {{- partial "sidebar-tree.html" (dict "node" $root "current" .) -}}
-          </ul>
-        {{- end -}}
+          {{- end -}}
+        </ul>
       </nav>
 
     </div>
