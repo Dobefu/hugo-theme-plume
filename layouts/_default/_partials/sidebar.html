@@ -9,12 +9,22 @@
         title="{{- i18n "sidebar.close" -}}"
       ></button>
 
+      <div class="sidebar__section--search">
+        <input
+          name="q"
+          placeholder="{{ i18n "search.placeholder" }}"
+          type="search"
+        />
+      </div>
+
       <nav class="sidebar__nav">
         <ul class="sidebar__section--pages">
           {{- if .IsHome -}}
             {{- range site.Menus.main -}}
               <li>
-                <a class="sidebar__section--header" href="{{ .URL }}">{{ .Name }}</a>
+                <a class="sidebar__section--header" href="{{ .URL }}">
+                  {{- .Name -}}
+                </a>
               </li>
             {{- end -}}
           {{- else if $root -}}

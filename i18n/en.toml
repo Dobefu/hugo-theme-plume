@@ -5,6 +5,9 @@
 [sidebar]
   close = "Close sidebar"
 
+[search]
+  placeholder = "Search..."
+
 [toc]
   title = "On this page"
   toggle = "Toggle table of contents"
