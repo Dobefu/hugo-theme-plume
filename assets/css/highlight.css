@@ -8,6 +8,7 @@
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-sm);
   color: var(--color-chroma-foreground);
+  min-height: 2.25rem;
   overflow: auto;
   padding: var(--spacing-sm);
 }
