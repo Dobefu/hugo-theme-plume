@@ -2,15 +2,17 @@ body {
   display: grid;
   grid-template-areas:
     "header"
+    "breadcrumbs"
     "main";
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto 1fr;
   min-height: 100vh;
 }
 
 body.has-toc {
   grid-template-areas:
     "header header"
+    "breadcrumbs toc"
     "main toc";
   grid-template-columns: 1fr 16rem;
 }
@@ -19,6 +21,7 @@ body.has-sidebar {
   display: grid;
   grid-template-areas:
     "header header"
+    "sidebar breadcrumbs"
     "sidebar main";
   grid-template-columns: 20rem 1fr;
 }
@@ -26,6 +29,7 @@ body.has-sidebar {
 body.has-toc.has-sidebar {
   grid-template-areas:
     "header header header"
+    "sidebar breadcrumbs toc"
     "sidebar main toc";
   grid-template-columns: 20rem 1fr 16rem;
 }
@@ -34,6 +38,7 @@ body.has-toc.has-sidebar {
   body {
     grid-template-areas:
       "header"
+      "breadcrumbs"
       "main";
     grid-template-columns: 1fr;
   }
@@ -41,14 +46,16 @@ body.has-toc.has-sidebar {
   body.has-toc {
     grid-template-areas:
       "header header"
+      "breadcrumbs toc"
       "main toc";
     grid-template-columns: 1fr 16rem;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto 1fr;
   }
 
   body.has-sidebar {
     grid-template-areas:
       "header"
+      "breadcrumbs"
       "main"
       "sidebar";
     grid-template-columns: 1fr;
@@ -57,6 +64,7 @@ body.has-toc.has-sidebar {
   body.has-toc.has-sidebar {
     grid-template-areas:
       "header header"
+      "breadcrumbs toc"
       "main toc";
     grid-template-columns: 1fr 16rem;
   }
@@ -66,6 +74,7 @@ body.has-toc.has-sidebar {
   body {
     grid-template-areas:
       "header"
+      "breadcrumbs"
       "main";
     grid-template-columns: 1fr;
   }
@@ -74,15 +83,17 @@ body.has-toc.has-sidebar {
     grid-template-areas:
       "header"
       "toc"
+      "breadcrumbs"
       "main";
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto auto auto 1fr;
   }
 
   body.has-toc.has-sidebar {
     grid-template-areas:
       "header"
       "toc"
+      "breadcrumbs"
       "main";
     grid-template-columns: 1fr;
   }
