@@ -23,7 +23,7 @@
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-sm);
   color: var(--color-chroma-foreground);
-  min-height: 2.25rem;
+  min-height: 3.25rem;
   overflow: auto;
   padding: var(--spacing-sm);
 }
@@ -34,6 +34,7 @@
 
 .chroma .chroma {
   box-shadow: none;
+  min-height: 0;
   overflow: visible;
   padding: 0;
 }
