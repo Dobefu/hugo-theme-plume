@@ -82,8 +82,8 @@ body.has-toc.has-sidebar {
   body.has-toc {
     grid-template-areas:
       "header"
-      "toc"
       "breadcrumbs"
+      "toc"
       "main";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto 1fr;
@@ -92,8 +92,8 @@ body.has-toc.has-sidebar {
   body.has-toc.has-sidebar {
     grid-template-areas:
       "header"
-      "toc"
       "breadcrumbs"
+      "toc"
       "main";
     grid-template-columns: 1fr;
   }
