@@ -2,9 +2,7 @@
 
 <figure class="code-block" role="figure" aria-label="{{- $label | plainify -}}">
   {{- with .Attributes.title -}}
-    <figcaption>
-      {{ . }}
-    </figcaption>
+    <figcaption>{{- . -}}</figcaption>
   {{- end -}}
 
   {{- with transform.HighlightCodeBlock . -}}
