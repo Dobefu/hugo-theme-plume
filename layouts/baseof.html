@@ -23,11 +23,13 @@
       <aside id="toc" class="toc">
         <div class="toc__header" data-action="toggle-toc">
           <h3 class="toc__title">{{- i18n "toc.title" -}}</h3>
-          <div
+
+          <button
             class="toc__toggle"
             aria-label="{{- i18n "toc.toggle" -}}"
-          ></div>
+          ></button>
         </div>
+
         <div class="toc__content">
           {{- .TableOfContents -}}
         </div>

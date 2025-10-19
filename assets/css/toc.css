@@ -27,6 +27,13 @@
   padding: var(--spacing-xs);
 }
 
+.toc__toggle:not([disabled]):hover,
+.toc__toggle:not([disabled]):active {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
 .toc ul {
   list-style: none;
   padding: 0;
