@@ -1,0 +1,27 @@
+{{- if not .IsHome -}}
+  <div class="breadcrumbs">
+    {{- $pages := slice -}}
+    {{- $current := . -}}
+
+    {{- range $e := .Ancestors.Reverse -}}
+      {{- $pages = $pages | append $e -}}
+    {{- end -}}
+
+    {{- $pages = $pages | append $current -}}
+    {{- $pageLen := $pages | len -}}
+
+    {{- range $i, $page := $pages -}}
+      {{- if eq $i (sub $pageLen 1) -}}
+        <span class="crumb current">{{ $page.Title }}</span>
+      {{- else if (eq $i 0) -}}
+        <a
+          class="crumb home"
+          href="{{ $page.Permalink }}"
+          title="{{ $page.Title }}"
+        ></a>
+      {{- else -}}
+        <a class="crumb" href="{{ $page.Permalink }}">{{ $page.Title }}</a>
+      {{- end -}}
+    {{- end -}}
+  </div>
+{{- end -}}

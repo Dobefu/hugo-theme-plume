@@ -29,6 +29,8 @@
   --color-button-border: #035280;
   --color-button-border--hover: #035280;
   --color-button-border--active: #034a73;
+  --color-breadcrumbs-foreground: #333;
+  --color-breadcrumbs-border: #e2e8f0;
 
   --color-heading: #0369a1;
   --color-link: #1357b1;
@@ -107,6 +109,8 @@
     --color-button-border: #5999e8;
     --color-button-border--hover: #508dd9;
     --color-button-border--active: #4982c8;
+    --color-breadcrumbs-foreground: #a3a3a3;
+    --color-breadcrumbs-border: #262626;
 
     --color-heading: #60a5fa;
     --color-link: #579cf0;
