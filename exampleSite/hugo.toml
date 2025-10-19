@@ -12,6 +12,8 @@ disableKinds = ['taxonomy', 'term']
   themeColor = '#000000'
 
   [params.socialLinks]
+    github = 'https://github.com/Dobefu/hugo-theme-plume'
+
     # Enable social links by uncommenting any of the following lines.
     #
     # bluesky = 'https://bsky.app/profile/<your-bluesky-username>'
