@@ -7,7 +7,7 @@
 
         {{- if $iconContent -}}
           <div title="{{ i18n (printf "socialLinks.%s" $key) }}">
-            {{- $iconContent | safeHTML -}}
+            <div aria-hidden="true">{{- $iconContent | safeHTML -}}</div>
           </div>
         {{- else -}}
           {{- warnf "Icon %s not found" $iconPath -}}
