@@ -13,7 +13,7 @@ A lightweight Hugo documentation theme without any external dependencies.
 - [x] SEO optimisation
 - [x] Multi-language support (i18n)
 - [x] Web app manifest
-- [ ] Search
+- [x] Search
 
 ## Installation (new site)
 
@@ -102,7 +102,6 @@ To configure the theme, update the `hugo.toml` file with the following:
           inline = [['\(', '\)']]
 
 ```
-
 
 ## License
 
