@@ -19,6 +19,10 @@
   title = "Niet gevonden"
   body = "De pagina kon niet worden gevonden."
 
+[codeblock]
+  [codeblock.copy]
+    title = "Kopiëren naar klembord"
+
 [socialLinks]
   bluesky = "Bluesky"
   discord = "Discord"

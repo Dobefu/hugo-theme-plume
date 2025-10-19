@@ -8,10 +8,13 @@
   }
 
   for (const highlight of highlights) {
-    const copyBtn = document.createElement("button");
-    copyBtn.classList.add("highlight__copy");
+    const copyBtn = document.querySelector(".highlight__copy");
 
-    highlight.addEventListener("click", () => {
+    if (!copyBtn) {
+      continue;
+    }
+
+    copyBtn.addEventListener("click", () => {
       /** @type {HTMLPreElement | null} */
       const codeElement = highlight.querySelector("[data-lang]");
       const code = (codeElement?.innerText ?? "").replaceAll("\n\n", "\n");
@@ -23,7 +26,5 @@
         copyBtn.classList.remove("copied");
       }, 1000);
     });
-
-    highlight.insertBefore(copyBtn, highlight.firstChild);
   }
 })();

@@ -1,3 +1,7 @@
+.code-block {
+  position: relative;
+}
+
 .code-block figcaption {
   background: var(--color-chroma-background);
   border-start-end-radius: var(--border-radius-sm);

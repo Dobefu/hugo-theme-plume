@@ -4,6 +4,7 @@ button.highlight__copy {
   inset-inline-end: var(--spacing-sm);
   position: absolute;
   transition: border-color 0.2s linear;
+  z-index: 1;
 }
 
 button.highlight__copy,

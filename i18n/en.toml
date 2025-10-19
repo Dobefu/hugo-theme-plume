@@ -19,6 +19,10 @@
   title = "Not Found"
   body = "The page could not be found."
 
+[codeblock]
+  [codeblock.copy]
+    title = "Copy to clipboard"
+
 [socialLinks]
   bluesky = "Bluesky"
   discord = "Discord"
