@@ -2,6 +2,9 @@
   toggle-sidebar = "Toggle sidebar"
   toggle-menu = "Toggle menu"
 
+[skip-link]
+  title = "Skip to main content"
+
 [sidebar]
   close = "Close sidebar"
 
