@@ -40,6 +40,10 @@
   padding: var(--spacing-xs);
 }
 
+[dir="rtl"] .breadcrumbs > a.crumb::after {
+  transform: rotateZ(180deg);
+}
+
 .breadcrumbs > .crumb.current {
   color: var(--color-breadcrumbs-foreground);
 }
