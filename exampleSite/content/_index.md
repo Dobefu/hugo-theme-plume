@@ -6,6 +6,4 @@ weight = 0
 draft = false
 +++
 
-# Welcome to Plume
-
 A lightweight Hugo documentation theme without any external dependencies.

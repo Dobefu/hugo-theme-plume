@@ -1,6 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'Plume'
+theme = 'plume'
 
 disableKinds = ['taxonomy', 'term']
 
@@ -32,6 +33,11 @@ disableKinds = ['taxonomy', 'term']
     name = 'Home'
     pageRef = '/'
     weight = 10
+
+  [[menus.main]]
+    name = 'Documentation'
+    pageRef = '/docs/'
+    weight = 20
 
 [outputs]
   home = ['html', 'rss', 'webappmanifest', 'json']
