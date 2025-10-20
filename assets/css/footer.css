@@ -1,6 +1,7 @@
 .footer {
   background: var(--color-footer-background);
   border-block-start: 1px solid var(--color-footer-border);
+  box-shadow: var(--drop-shadow-up-md);
   color: var(--color-footer-foreground);
   padding: var(--spacing-md);
   text-align: center;
