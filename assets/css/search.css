@@ -69,7 +69,7 @@
 }
 
 .search-result__title {
-  color: var(--color-heading);
+  color: var(--color-primary);
   font-size: 1.1rem;
 }
 

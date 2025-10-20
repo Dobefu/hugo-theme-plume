@@ -19,7 +19,7 @@ ul {
 
 ol > li::marker,
 ul > li::marker {
-  color: var(--color-heading);
+  color: var(--color-primary);
   font-weight: 500;
 }
 
@@ -40,7 +40,7 @@ dl {
 }
 
 dl > dt {
-  color: var(--color-heading);
+  color: var(--color-primary);
   font-weight: 600;
 }
 

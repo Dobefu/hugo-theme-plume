@@ -75,7 +75,7 @@
   }
 
   .toc__toggle::after {
-    background-color: var(--color-heading);
+    background-color: var(--color-primary);
     content: "";
     display: block;
     height: var(--spacing-lg);

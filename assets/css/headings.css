@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-heading);
+  color: var(--color-primary);
   margin: var(--spacing-md) 0;
 }
 
@@ -42,4 +42,3 @@ h6 {
 :is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
   margin-block-start: 0;
 }
-
