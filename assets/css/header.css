@@ -116,7 +116,7 @@ button.header__menu--toggle::after {
 
   .header .menu {
     background: var(--color-header-background);
-    box-shadow: 0 1rem 1rem -1rem #0000001f;
+    box-shadow: var(--drop-shadow-down-lg);
     height: 0;
     overflow: hidden;
     position: absolute;
@@ -141,4 +141,3 @@ button.header__menu--toggle::after {
     padding: var(--spacing-lg) var(--spacing-md);
   }
 }
-
