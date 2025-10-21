@@ -22,19 +22,35 @@
   --color-input-foreground: #000;
   --color-input-border: #e2e8f0;
   --color-button-background: var(--color-primary);
-  --color-button-background--hover: #035b8c;
-  --color-button-background--active: #035380;
+  --color-button-background--hover: color-mix(
+    in srgb,
+    var(--color-primary) 85%,
+    #000
+  );
+  --color-button-background--active: color-mix(
+    in srgb,
+    var(--color-primary) 75%,
+    #000
+  );
   --color-button-foreground: #fff;
   --color-button-foreground--hover: #fff;
   --color-button-foreground--active: #fff;
-  --color-button-border: #035280;
-  --color-button-border--hover: #035280;
-  --color-button-border--active: #034a73;
+  --color-button-border: color-mix(in srgb, var(--color-primary) 65%, #000);
+  --color-button-border--hover: color-mix(
+    in srgb,
+    var(--color-primary) 55%,
+    #000
+  );
+  --color-button-border--active: color-mix(
+    in srgb,
+    var(--color-primary) 45%,
+    #000
+  );
   --color-breadcrumbs-foreground: #333;
   --color-breadcrumbs-border: #e2e8f0;
 
-  --color-link: #1357b1;
-  --color-link-visited: #1357b1;
+  --color-link: color-mix(in srgb, var(--color-primary) 95%, #000);
+  --color-link-visited: color-mix(in srgb, var(--color-primary) 95%, #000);
   --color-hr: #e2e8f0;
   --color-table-border: #e2e8f0;
   --color-table-header-background: #f8fafc;
@@ -108,19 +124,35 @@
       var(--color-primary) 70%,
       #000
     );
-    --color-button-background--hover: #4071ac;
-    --color-button-background--active: #38679f;
+    --color-button-background--hover: color-mix(
+      in srgb,
+      var(--color-primary) 65%,
+      #000
+    );
+    --color-button-background--active: color-mix(
+      in srgb,
+      var(--color-primary) 60%,
+      #000
+    );
     --color-button-foreground: #fff;
     --color-button-foreground--hover: #fff;
     --color-button-foreground--active: #fff;
-    --color-button-border: #5999e8;
-    --color-button-border--hover: #508dd9;
-    --color-button-border--active: #4982c8;
+    --color-button-border: color-mix(in srgb, var(--color-primary) 85%, #000);
+    --color-button-border--hover: color-mix(
+      in srgb,
+      var(--color-primary) 80%,
+      #000
+    );
+    --color-button-border--active: color-mix(
+      in srgb,
+      var(--color-primary) 75%,
+      #000
+    );
     --color-breadcrumbs-foreground: #a3a3a3;
     --color-breadcrumbs-border: #262626;
 
-    --color-link: #579cf0;
-    --color-link-visited: #579cf0;
+    --color-link: color-mix(in srgb, var(--color-primary) 80%, #fff);
+    --color-link-visited: color-mix(in srgb, var(--color-primary) 80%, #fff);
     --color-hr: #262626;
     --color-table-border: #262626;
     --color-table-header-background: #171717;
