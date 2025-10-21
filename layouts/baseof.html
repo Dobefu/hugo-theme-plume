@@ -4,11 +4,11 @@
   dir="{{- or site.Language.LanguageDirection `ltr` -}}"
 >
   {{- partial "head.html" . -}}
-  {{- $hasToc := (strings.Contains .TableOfContents "<li>") -}}
+  {{- $hasToc := and (strings.Contains .TableOfContents "<li>") (not (eq .Params.toc false)) -}}
   {{- $hasSidebar := (site.GetPage "section" .Section).Pages -}}
 
   <body
-    class="{{ if $hasToc -}}has-toc{{- end }} {{ if $hasSidebar -}} has-sidebar{{- end }}"
+    class="{{ if $hasToc -}}has-toc{{- end }}{{ if $hasSidebar }} has-sidebar{{- end }}"
   >
     {{- partial "skip-link.html" . -}}
 
