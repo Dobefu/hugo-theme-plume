@@ -2,6 +2,8 @@
 
 A lightweight Hugo documentation theme without any external dependencies.
 
+![Screenshot](https://github.com/Dobefu/hugo-theme-plume/blob/main/images/screenshot.png?raw=true)
+
 ## Features
 
 - [x] Zero dependencies
